@@ -49,7 +49,7 @@ jobs:
       - name: Run benchmark
         run: |
           cd benchmarking
-          npm run test:ci
+          npm run test:ci --silent 
       - name: Compare result
         uses: benchmark-action/github-action-benchmark@v1
         with:
